@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=HemingVariable&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
 @tailwind base;
@@ -5,136 +6,111 @@
 @tailwind utilities;
 
 :root {
+  --primary-color: #0d0f1a; /* Deep Tech Blue */
+  --secondary-color: #1b1f30; /* Slightly lighter dark blue */
+  --neon-blue: #00d4ff; /* Futuristic Neon Blue */
+  --neon-purple: #8a2be2; /* Bright Cyber Purple */
+  --neon-cyan: #00ffee; /* Cyberpunk Cyan */
   --black-gradient: linear-gradient(
     144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
+    #1b1f30 -50%, 
+    #0d0f1a 40%, 
+    #000000 95%
   );
-  --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  --card-shadow: 0px 20px 100px -10px rgba(0, 221, 255, 0.2); /* Neon shadow */
 }
 
 * {
+  font-family: 'HemingVariable', sans-serif;
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'HemingVariable', sans-serif;
+  background: var(--black-gradient);
+  color: white;
+}
+
 .text-gradient {
-  background: radial-gradient(
-    64.18% 64.18% at 71.16% 35.69%,
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
-  );
+  background: linear-gradient(90deg, var(--neon-blue) 0%, var(--neon-purple) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .bg-blue-gradient {
-  background: linear-gradient(
-    157.81deg,
-    #def9fa -43.27%,
-    #bef3f5 -21.24%,
-    #9dedf0 12.19%,
-    #7de7eb 29.82%,
-    #5ce1e6 51.94%,
-    #33bbcf 90.29%
-  );
+  background: linear-gradient(180deg, var(--neon-blue) 10%, var(--neon-cyan) 90%);
+}
+
+.bg-dark-gradient {
+  background: linear-gradient(180deg, var(--secondary-color) 30%, var(--primary-color) 100%);
+}
+
+.bg-neon-gradient {
+  background: linear-gradient(160deg, var(--neon-purple) 20%, var(--neon-blue) 80%);
 }
 
 .bg-black-gradient {
-  background: linear-gradient(
-    144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
+  background: var(--black-gradient);
 }
 
-.bg-black-gradient-2 {
-  background: linear-gradient(
-    -168.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
-  );
-}
-
-.bg-gray-gradient {
-  background: linear-gradient(
-    153.47deg,
-    rgba(255, 255, 255, 0) -341.94%,
-    #14101d 95.11%
-  );
-}
-
-.bg-discount-gradient {
-  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+.bg-glow {
+  background: radial-gradient(circle, rgba(0, 255, 238, 0.2) 0%, rgba(0, 0, 0, 1) 70%);
 }
 
 .box-shadow {
-  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  box-shadow: 0px 20px 100px -10px rgba(0, 221, 255, 0.3);
 }
 
 .sidebar {
-  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
+  -webkit-animation: slide-top 0.5s ease-in-out both;
+  animation: slide-top 0.5s ease-in-out both;
 }
 
 @keyframes slide-top {
   0% {
-    -webkit-transform: translateY(100px);
     transform: translateY(100px);
   }
   100% {
-    -webkit-transform: translateY(0);
     transform: translateY(0);
   }
 }
 
+/* Neon Hover Effects */
+.feature-card {
+  background: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+}
+
 .feature-card:hover {
   background: var(--black-gradient);
-  box-shadow: var(--card-shadow);
+  box-shadow: 0px 0px 15px var(--neon-blue);
+  transform: translateY(-5px);
 }
 
-.feedback-container .feedback-card:last-child {
-  margin-right: 0px;
-}
-
+/* Feedback Cards */
 .feedback-card {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
 }
 
 .feedback-card:hover {
   background: var(--black-gradient);
+  box-shadow: 0px 0px 15px var(--neon-cyan);
 }
 
+/* Futuristic Blurs */
 .blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  background: linear-gradient(180deg, rgba(0, 255, 238, 0.3) 0%, #214d76 100%);
   filter: blur(123px);
 }
 
 .pink__gradient {
-  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  background: linear-gradient(90deg, var(--neon-purple) 0%, #fc67fa 100%);
   filter: blur(900px);
 }
 
 .white__gradient {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.2);
   filter: blur(750px);
 }

@@ -19,18 +19,18 @@ const FeatureCard = ({ icon, title, content, index }) => (
 );
 
 const Business = () =>  (
-  <section id="features" className={layout.section}>
+  <section id="about" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        You do the business, <br className="sm:block hidden" /> we’ll handle
-        the money.
+      About Next<span className="text-[#8A2BE2]">Gen</span>
       </h2>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right credit card, you can improve your financial life by
-        building credit, earning rewards and saving money. But with hundreds
-        of credit cards on the market.
+      <p className={`${styles.paragraph} max-w-[470px] mt-5`}> 
+        Our team is passionate about creating scalable, efficient, and intelligent software solutions tailored to your unique needs.  
+        We empower startups and enterprises with:   
+        <br />✅ <strong>Custom Software Development</strong>   
+        <br />✅ <strong>AI & Automation Solutions</strong>
+        <br />✅ <strong>Website & Web App Development</strong>  
       </p>
-
       <Button styles={`mt-10`} />
     </div>
 

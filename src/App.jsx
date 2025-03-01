@@ -1,5 +1,6 @@
 import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import { Billing, Business, CardDeal, CTA, Footer, Navbar, Stats, Hero } from "./components";
+import Wesbsites from "./components/Websites.jsx";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -21,8 +22,7 @@ const App = () => (
         <Business />
         <Billing />
         <CardDeal />
-        <Testimonials />
-        <Clients />
+        <Wesbsites />
         <CTA />
         <Footer />
       </div>

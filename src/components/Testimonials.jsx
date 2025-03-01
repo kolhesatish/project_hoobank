@@ -12,14 +12,17 @@ const Testimonials = () => (
       </h2>
       <div className="w-full md:mt-0 mt-6">
         <p className={`${styles.paragraph} text-left max-w-[450px]`}>
-          Everything you need to accept card payments and grow your business
-          anywhere on the planet.
+          Everything you need to accept card payments and grow your business anywhere on the planet.
         </p>
       </div>
     </div>
 
-    <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
-      {feedback.map((card) => <FeedbackCard key={card.id} {...card} />)}
+    <div className="flex flex-wrap justify-between w-full feedback-container relative z-[1]">
+      {feedback.map((card) => (
+        <div className="w-full sm:w-[32%] md:w-[30%] lg:w-[33%] p-4" key={card.id}>
+          <FeedbackCard {...card} />
+        </div>
+      ))}
     </div>
   </section>
 );

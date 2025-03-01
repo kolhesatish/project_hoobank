@@ -6,40 +6,33 @@ export const navLinks = [
     title: "Home",
   },
   {
-    id: "features",
-    title: "Features",
+    id: "about",
+    title: "About",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "services",
+    title: "Services",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "contact",
+    title: "Contact",
   },
 ];
 
 export const features = [
   {
     id: "feature-1",
-    icon: star,
-    title: "Rewards",
+    icon: send,
+    title: "Vision",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "To revolutionize the digital world by creating intelligent, scalable, and future-ready software solutions that empower businesses and drive innovation globally.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Mission",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
-  },
-  {
-    id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
-    content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "At NextGen, we deliver cutting-edge software, AI solutions, and high-performance websites to enhance efficiency and user experiences. Through innovation and collaboration, we shape the future of technology and empower businesses to thrive.",
   },
 ];
 
@@ -55,7 +48,7 @@ export const feedback = [
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+      "It is usually people in the money business, finance, and international trade that are really rich.",
     name: "Steve Mark",
     title: "Founder & Leader",
     img: people02,
@@ -72,82 +65,66 @@ export const feedback = [
 
 export const stats = [
   {
-    id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    id: "stats-2",
+    title: "Websites",
+    value: "10+",
   },
   {
-    id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    id: "stats-1",
+    title: "Automation Tools",
+    value: "15+",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "Hours Saved",
+    value: "1000+",
   },
 ];
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Company",
     links: [
       {
-        name: "Content",
+        name: "About Us",
         link: "https://www.hoobank.com/content/",
       },
       {
-        name: "How it Works",
+        name: "Form",
         link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
+      }
     ],
   },
   {
-    title: "Community",
+    title: "Services",
     links: [
       {
-        name: "Help Center",
+        name: "Software Development",
         link: "https://www.hoobank.com/help-center/",
       },
       {
-        name: "Partners",
+        name: "AI Solutions",
         link: "https://www.hoobank.com/partners/",
       },
       {
-        name: "Suggestions",
+        name: "Website Development",
         link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
       },
     ],
   },
   {
-    title: "Partner",
+    title: "Contact",
     links: [
       {
-        name: "Our Partner",
+        name: "Book a Call",
         link: "https://www.hoobank.com/our-partner/",
       },
       {
-        name: "Become a Partner",
+        name: "Contact Form",
+        link: "https://www.hoobank.com/become-a-partner/",
+      },
+      {
+        name: "nextgen.work.inquiry@gmail.com",
         link: "https://www.hoobank.com/become-a-partner/",
       },
     ],
@@ -155,6 +132,11 @@ export const footerLinks = [
 ];
 
 export const socialMedia = [
+  {
+    id: "social-media-4",
+    icon: linkedin,
+    link: "https://www.linkedin.com/company/nextgen-linkedin",
+  },
   {
     id: "social-media-1",
     icon: instagram,
@@ -169,12 +151,7 @@ export const socialMedia = [
     id: "social-media-3",
     icon: twitter,
     link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-4",
-    icon: linkedin,
-    link: "https://www.linkedin.com/",
-  },
+  }
 ];
 
 export const clients = [

@@ -1,11 +1,11 @@
-import { software } from "../assets";
+import { web } from "../assets";
 import styles, { layout } from "../style";
 import Lottie from "lottie-react";
 
 const Billing = () => (
-  <section id="services" className={layout.sectionReverse}>
+  <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
-      <Lottie animationData={software} loop={true} />
+      <Lottie animationData={web} loop={true} />
 
       {/* gradient start */}
       <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />
@@ -15,11 +15,10 @@ const Billing = () => (
 
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-      Software Development
+      Website <br/> Development
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-      We build custom software solutions tailored to your business needs, ensuring scalability, efficiency, and seamless integration. From enterprise applications to automation tools, we deliver high-quality, future-ready software.
-      </p>
+      We create modern, responsive, and high-performance websites that engage users and enhance digital presence. Whether it’s a corporate site, e-commerce platform, or web app, we ensure seamless functionality and stunning design.      </p>
 
       {/* <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
         <img src={apple} alt="google_play" className="w-[128.86px] h-[42.05px] object-contain mr-5 cursor-pointer" />

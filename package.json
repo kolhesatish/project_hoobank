@@ -9,8 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.66.6",
+    "axios": "^1.7.9",
+    "lottie-react": "^2.4.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.5.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.15",
