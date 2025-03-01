@@ -11,7 +11,7 @@ const CTA = () => {
   const sendEmail = async (data) => {
     setIsSubmitting(true); // Start the submission process
     try {
-      const res = await axios.post("http://localhost:3000/send-email", data);
+      const res = await axios.post(`/api/send-email`, data);
       if (res.status === 200) {
         toast.success("Your details have been submitted successfully!");
         setIsSubmitted(true);
